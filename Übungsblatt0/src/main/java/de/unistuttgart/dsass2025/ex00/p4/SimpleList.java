@@ -62,12 +62,7 @@ public class SimpleList<T extends Comparable<T>> implements ISimpleListIterable<
             currentIndex--; // adjust for removed item
             lastReturnedIndex = -1;
         }
-        public void iterator(){
-            while(hasNext()){
-                next();
-
-            }
-        }
+        
     }
 
 
