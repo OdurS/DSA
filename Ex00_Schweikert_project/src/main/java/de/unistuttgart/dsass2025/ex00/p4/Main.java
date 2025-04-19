@@ -8,6 +8,11 @@ public class Main {
         list.append("1");
 
         Iterator<String> iter = list.iterator();
+        //Ausgabe von iter
+        while (iter.hasNext()) {
+            Object obj = iter.next();
+            System.out.println(obj);
+        }
 
         list.append("2");
         list.append("3");
@@ -20,8 +25,17 @@ public class Main {
 
         System.out.println("------Skipping--------");
         Iterator<String> iterator = list.skippingIterator(3);
+        //Ausgabe von iterator
+        boolean wahrheit = true;
+        while (wahrheit)  {
+            if (!iterator.hasNext()){
+                wahrheit = false;
 
-        System.out.println(iter);
-        System.out.println(iterator);
+            }
+            Object obj = iterator.next();
+            System.out.println(obj);
+        };
+
     }
 }
+
