@@ -20,5 +20,8 @@ public class Main {
 
         System.out.println("------Skipping--------");
         Iterator<String> iterator = list.skippingIterator(3);
+
+        System.out.println(iter);
+        System.out.println(iterator);
     }
 }
