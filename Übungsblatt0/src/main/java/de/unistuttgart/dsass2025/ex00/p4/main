@@ -1,0 +1,47 @@
+package de.unistuttgart.dsass2023.ex00.p3;
+
+import java.util.Iterator;
+
+public class main {
+    //    list.append("aaa");
+public static void main(String[] args) {
+    // TODO Auto-generated method stub
+    SimpleList list = new SimpleList();
+//    System.out.println(list.getSize());
+
+    list.append("NULL");
+    list.append("1");
+//    System.out.println(list.getSize());
+//    System.out.println(list.getElement(0));
+    Iterator iter = list.iterator();
+//    Iterator iter = list.iterator();
+    while (iter.hasNext()) {
+        Object obj = iter.next();
+        System.out.println(obj);
+        // Verarbeite obj ...
+    }
+
+    list.append("2");
+    list.append("3");
+    list.append("4");
+    list.append("5");
+    list.append("6");
+    list.append("7");
+    list.append("8");
+    list.append("9");
+    System.out.println("##############################");
+    Iterator iterator = list.skippingIterator(3);
+    boolean wahrheit = true;
+    while (wahrheit)  {
+        if (!iterator.hasNext()){
+            wahrheit = false;
+
+        }
+        Object obj = iterator.next();
+        System.out.println(obj);
+    };
+
+
+
+}
+}
